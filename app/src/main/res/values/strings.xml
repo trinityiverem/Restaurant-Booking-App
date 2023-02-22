@@ -21,6 +21,12 @@
     <!-- to toggle the open close button of the navigation drawer -->
     <string name="nav_open">Open</string>
     <string name="nav_close">Close</string>
+    <!--  <string name="title_activity_menu">MenuActivity</string> -->
+
+    <string name="navigation_menu">Navigation Drawer</string>
+    <!-- to toggle the open close button of the navigation drawer -->
+    <string name="nav_open1">Open</string>
+    <string name="nav_close1">Close</string>
 
 
 </resources>

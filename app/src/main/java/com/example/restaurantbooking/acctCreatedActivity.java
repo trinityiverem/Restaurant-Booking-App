@@ -5,7 +5,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.restaurantbooking.ui.login.LoginFragment;
+
 
 public class acctCreatedActivity extends AppCompatActivity {
     private android.widget.Button log2;
@@ -20,12 +20,12 @@ public class acctCreatedActivity extends AppCompatActivity {
             public void onClick(View view) {
                 android.widget.Button btn = (android.widget.Button) findViewById(R.id.button);
 
-                btn.setOnClickListener(new android.view.View.OnClickListener() {
-                    @Override
+                /*  btn.setOnClickListener(new android.view.View.OnClickListener() {
+                  @Override
                     public void onClick(android.view.View w) {
                         startActivity(new android.content.Intent(acctCreatedActivity.this, LoginFragment.class));
                     }
-                });
+                });*/
             }
         });
 
