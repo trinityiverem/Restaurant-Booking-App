@@ -29,12 +29,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         //open log in page after clicking log in button
-       /* btnLogIn.setOnClickListener(new android.view.View.OnClickListener() {
+        btnLogIn.setOnClickListener(new android.view.View.OnClickListener() {
             @Override
             public void onClick(android.view.View v1) {
-                startActivity(new android.content.Intent(MainActivity.this, LoginFragment.class));
+                startActivity(new android.content.Intent(MainActivity.this, logInActivity.class));
             }
-        });*/
+        });
     }
 }
 

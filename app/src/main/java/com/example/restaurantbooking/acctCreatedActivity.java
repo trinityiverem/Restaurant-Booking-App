@@ -14,18 +14,11 @@ public class acctCreatedActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.acct_created);
-
-        log2.setOnClickListener(new View.OnClickListener() {
+        android.widget.Button btnLogIn = (android.widget.Button) findViewById(R.id.buttonL);
+        btnLogIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                android.widget.Button btn = (android.widget.Button) findViewById(R.id.button);
-
-                /*  btn.setOnClickListener(new android.view.View.OnClickListener() {
-                  @Override
-                    public void onClick(android.view.View w) {
-                        startActivity(new android.content.Intent(acctCreatedActivity.this, LoginFragment.class));
-                    }
-                });*/
+                startActivity(new android.content.Intent(acctCreatedActivity.this, logInActivity.class));
             }
         });
 

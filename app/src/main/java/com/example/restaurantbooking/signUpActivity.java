@@ -20,12 +20,11 @@ public class signUpActivity extends AppCompatActivity {
         String email = EmailEditText.getText().toString();
         String password = PasswordEditText.getText().toString();
         android.widget.Button SignUpButton = (android.widget.Button) findViewById(R.id.sign_up_button);
-        SignUpButton.setOnClickListener(new View.OnClickListener() {
+
+        SignUpButton.setOnClickListener(new android.view.View.OnClickListener() {
 
             @Override
-            public void onClick(View view1){
-
-
+            public void onClick(android.view.View view1){
                 startActivity(new android.content.Intent(signUpActivity.this, acctCreatedActivity.class));
                     }
                 });
