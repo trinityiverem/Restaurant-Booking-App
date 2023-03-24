@@ -1,5 +1,4 @@
 package com.example.restaurantbooking;
-
 import android.os.Bundle;
 import android.view.View;
 
@@ -8,7 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 public class acctCreatedActivity extends AppCompatActivity {
-    private android.widget.Button log2;
+    public android.widget.Button btnLogIn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,7 +17,7 @@ public class acctCreatedActivity extends AppCompatActivity {
         android.widget.Button btnLogIn = (android.widget.Button) findViewById(R.id.buttonL);
         btnLogIn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view3) {
                 startActivity(new android.content.Intent(acctCreatedActivity.this, logInActivity.class));
             }
         });

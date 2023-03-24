@@ -6,81 +6,159 @@
     android:orientation="vertical"
     tools:context=".CuisinesFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
-    <!-- android:background="@drawable/home_btn_test"
-        android:drawableTop="@drawable/home_icon_test" -->
-
-    <ImageButton
-        android:id="@+id/african"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_alignParentStart="true"
-        android:layout_gravity="top|left"
-        android:layout_marginLeft="18dp"
-        android:layout_marginTop="26dp"
-        android:text="African"
-        android:textColor="#FFFFFF"
-        android:background="@drawable/african_food"/>
-
-    <ImageButton
-        android:id="@+id/asian"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_gravity="top|right"
-        android:drawablePadding="-15sp"
-        android:text="Asian"
-        android:textColor="#FFFFFF"
-        android:layout_marginRight="18dp"
-        android:layout_marginTop="26dp"
-        android:background="@drawable/asian_food"/>
-    <ImageButton
-        android:id="@+id/caribbean"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_gravity="center|left"
-        android:text="Caribbean"
-        android:textColor="#FFFFFF"
-        android:layout_marginLeft="18dp"
-        android:background="@drawable/caribbean_food"/>
-
-    <ImageButton
-        android:id="@+id/english"
-        android:background="@drawable/english_food"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_gravity="center|right"
-        android:text="English"
-        android:textColor="#FFFFFF"
-        android:layout_marginRight="18dp"
-      />
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
 
 
-    <ImageButton
-        android:id="@+id/italian"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_gravity="bottom|left"
-        android:text="Italian"
-        android:textColor="#FFFFFF"
-        android:layout_marginLeft="18dp"
-        android:layout_marginBottom="26dp"
-        android:background="@drawable/italian_food"/>
+     <!-- android:background="@drawable/home_btn_test"
+         android:drawableTop="@drawable/home_icon_test" -->
 
-    <ImageButton
-        android:id="@+id/mexican"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_gravity="bottom|right"
-        android:text="Mexican"
-        android:textColor="#FFFFFF"
-        android:layout_marginRight="18dp"
-        android:layout_marginBottom="26dp"
-        android:background="@drawable/mexican_food"/>
+     <TextView
+         android:layout_width="157dp"
+         android:layout_height="89dp"
 
+         android:layout_alignParentStart="true"
+         android:layout_alignParentTop="true"
+         android:layout_alignParentEnd="true"
+         android:layout_marginStart="129dp"
+         android:layout_marginTop="26dp"
+         android:layout_marginEnd="124dp"
+         android:layout_marginBottom="55dp"
+         android:text="Cuisines"
+         android:textColor="#000000"
+         android:textSize="35dp"
+         android:textStyle="bold" />
+
+     <ImageButton
+         android:id="@+id/african"
+         android:layout_width="180dp"
+         android:layout_height="180dp"
+         android:layout_alignParentStart="true"
+         android:layout_alignParentTop="true"
+         android:layout_gravity="top|left"
+         android:layout_marginStart="12dp"
+         android:layout_marginLeft="18dp"
+         android:layout_marginTop="132dp"
+         android:layout_marginEnd="22dp"
+         android:layout_marginBottom="12dp"
+         android:layout_toStartOf="@+id/asian"
+         android:background="@drawable/african_food"
+         android:text="African"
+         android:textColor="#FFFFFF" />
+
+     <TextView
+         android:layout_width="118dp"
+         android:layout_height="30dp"
+         android:layout_alignTop="@+id/african"
+         android:layout_alignEnd="@+id/african"
+         android:layout_alignBottom="@+id/african"
+         android:layout_alignParentStart="true"
+         android:layout_marginStart="62dp"
+         android:layout_marginTop="95dp"
+         android:layout_marginEnd="8dp"
+         android:layout_marginBottom="55dp"
+         android:text="AFRICAN"
+         android:textColor="#FFFFFF"
+         android:textSize="20dp"
+         android:textStyle="bold" />
+
+     <ImageButton
+         android:id="@+id/asian"
+         android:layout_width="180dp"
+         android:layout_height="180dp"
+         android:layout_alignParentTop="true"
+         android:layout_alignParentEnd="true"
+         android:layout_gravity="top|right"
+         android:layout_marginTop="140dp"
+         android:layout_marginEnd="14dp"
+         android:layout_marginRight="18dp"
+         android:background="@drawable/asian_food"
+         android:drawablePadding="-15sp"
+         android:text="Asian"
+         android:textColor="#FFFFFF" />
+
+
+     <TextView
+         android:layout_width="118dp"
+         android:layout_height="30dp"
+         android:layout_alignStart="@+id/asian"
+         android:layout_alignTop="@+id/asian"
+         android:layout_alignEnd="@+id/asian"
+         android:layout_alignBottom="@+id/asian"
+         android:layout_marginStart="57dp"
+         android:layout_marginTop="93dp"
+         android:layout_marginEnd="5dp"
+         android:layout_marginBottom="57dp"
+         android:text="ASIAN"
+         android:textColor="#FFFFFF"
+         android:textSize="20dp"
+         android:textStyle="bold" />
+
+
+     <ImageButton
+         android:id="@+id/caribbean"
+         android:layout_width="180dp"
+         android:layout_height="180dp"
+         android:layout_alignParentBottom="true"
+         android:layout_marginEnd="21dp"
+         android:layout_marginBottom="70dp"
+         android:layout_toStartOf="@+id/italian"
+         android:background="@drawable/caribbean_food"
+         android:text="Caribbean"
+         android:textColor="#FFFFFF" />
+
+     <TextView
+         android:layout_width="136dp"
+         android:layout_height="73dp"
+         android:layout_alignTop="@+id/caribbean"
+         android:layout_alignEnd="@+id/caribbean"
+         android:layout_alignBottom="@+id/caribbean"
+         android:layout_alignParentStart="true"
+         android:layout_marginStart="53dp"
+         android:layout_marginTop="78dp"
+         android:layout_marginEnd="7dp"
+         android:layout_marginBottom="29dp"
+         android:text="CARIBBEAN"
+         android:textColor="#FFFFFF"
+         android:textSize="20dp"
+         android:textStyle="bold" />
+
+     <ImageButton
+         android:id="@+id/italian"
+         android:layout_width="180dp"
+         android:layout_height="180dp"
+         android:layout_below="@+id/asian"
+         android:layout_alignParentEnd="true"
+         android:layout_alignParentBottom="true"
+         android:layout_gravity="bottom|left"
+         android:layout_marginLeft="18dp"
+         android:layout_marginTop="28dp"
+         android:layout_marginEnd="14dp"
+         android:layout_marginBottom="74dp"
+         android:background="@drawable/italian_food"
+         android:text="Italian"
+         android:textColor="#FFFFFF" />
+
+     <TextView
+         android:layout_width="118dp"
+         android:layout_height="30dp"
+         android:layout_alignStart="@+id/italian"
+         android:layout_alignTop="@+id/italian"
+         android:layout_alignEnd="@+id/italian"
+         android:layout_alignBottom="@+id/italian"
+         android:layout_marginStart="52dp"
+         android:layout_marginTop="74dp"
+         android:layout_marginEnd="10dp"
+         android:layout_marginBottom="76dp"
+         android:text="ITALIAN"
+         android:textColor="#FFFFFF"
+         android:textSize="20dp"
+         android:textStyle="bold" />
+
+
+ </RelativeLayout>
 
 
 </FrameLayout>
+

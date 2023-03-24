@@ -5,11 +5,114 @@
     android:layout_height="match_parent"
     tools:context=".ProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <!--Button to open the image selector-->
+
+        <!--ImageView to preview the selected image-->
+
+        <TextView
+            android:layout_width="278dp"
+            android:layout_height="75dp"
+            android:layout_above="@+id/imageView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="53dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="7dp"
+            android:gravity="center"
+            android:text="Profile"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <ImageView
+
+            android:id="@+id/imageView"
+            android:layout_width="130dp"
+            android:layout_height="107dp"
+            android:layout_above="@+id/BSelectImage"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="137dp"
+            android:layout_marginBottom="6dp"
+            android:background="#000000"
+            android:padding="1dp"
+            android:src="@drawable/ic_baseline_person_24" />
+
+        <Button
+            android:id="@+id/BSelectImage"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/date_of_birth_field"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="91dp"
+            android:layout_marginEnd="114dp"
+            android:layout_marginBottom="25dp"
+            android:text="CHANGE IMAGE"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/date_of_birth_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/email_field"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="46dp"
+            android:layout_marginEnd="53dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:hint="Date of Birth"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/email_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/new_password"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="9dp"
+            android:gravity="center"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/new_password"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/edit_button"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginEnd="51dp"
+            android:layout_marginBottom="42dp"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/edit_button"
+            android:layout_width="74dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="167dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="169dp"
+            android:layout_marginBottom="73dp"
+            android:text="Edit" />
+
+
+    </RelativeLayout>
 
 
 </FrameLayout>
